@@ -3,23 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/projectFragment">
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.echorecorder.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/projectFragment"
+        android:name="com.example.echorecorder.ProjectFragment"
+        android:label="@string/menu_project"
+        tools:layout="@layout/fragment_project_list" />
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.echorecorder.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/recordFragment"
+        android:name="com.example.echorecorder.RecordFragment"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.echorecorder.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/mapsFragment"
+        android:name="com.example.echorecorder.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.echorecorder.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>
